@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Age Calculator App"/>
+        <title>Age Calculator App</title>
+        <link rel="stylesheet" href="age-calculator-css.css"/>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="input-container">    
+                    <label for="day-input" >
+                        <span class="date-label">DAY</span>
+                        <input id="day-input" type="number" placeholder="DD"/>
+                        <span class="required">This field is required</span>
+                        <span class="invalid">Must be a valid day</span>
+                        <span class="incorrect">Must be a valid date</span>
+                    </label>
+                    <label for="month-input">
+                        <span class="date-label">MONTH</span>
+                        <input id="month-input" type="number" placeholder="MM"/>
+                        <span class="required">This field is required</span>
+                        <span class="invalid">Must be a valid month</span>
+                    </label>
+                    <label for="year-input">
+                        <span class="date-label">YEAR</span>
+                        <input id="year-input" type="number" placeholder="YYYY"/>
+                        <span class="required">This field is required</span>
+                        <span class="past-date">Must be in the past</span>
+                    </label>
+                </div>
+                <div class="submit-div">
+                    <hr>
+                    <button id="convert-btn"></button>
+                </div>
+                <h1 class="output"><span id="years" class="purple">--</span> years</h1>  
+                <h1 class="output"><span id="months" class="purple">--</span> months</h1>
+                <h1 class="output"><span id="days" class="purple">--</span> days</h1>
+            </div>
+        </main>
+        <script src="age-calculator-js.js"></script>
+    </body>
+</html>
